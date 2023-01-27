@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bi-arrow-left-circle-fill {
+    font-size: 50px;
+    cursor: pointer;
+    color: #142F43;
+}
+
+.notFound {
+    font-size: 42px;
+}
+
+.container-auth {
+    box-shadow: 0 7px 15px #142F43;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+.container-auth img {
+    width: 100px;
+}
+
+.container-auth .button {
+    width: 150px;
+    font-size: 16px;
+}

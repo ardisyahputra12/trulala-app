@@ -1,4 +1,4 @@
-import Login from "../models/login.js";
+const Login = require("../models/login.js");
 
 const login = (req, res, next) => {
     let msg = req.session.err || "";
@@ -58,4 +58,4 @@ const authSignup = (req, res, next) => {
     });
 };
 
-export default { login, signup, logout, authLogin, authSignup };
+module.exports = { login, signup, logout, authLogin, authSignup };

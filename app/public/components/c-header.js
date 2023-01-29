@@ -18,9 +18,11 @@ class CHeader extends HTMLElement {
                 }
             </style>
             <div class="d-flex align-items-center">
-                <h1 class="me-5">Trulala App</h1>
+                <a href="/" class="text-white">
+                    <h1 class="me-5">Trulala App</h1>
+                </a>
                 <div class="nav justify-content-end">
-                    <a href="/" class="nav-item ps-4 pe-4 text-white fs-5">
+                    <a href="/home" class="nav-item ps-4 pe-4 text-white fs-5">
                         Home
                     </a>
                     <a href="/project" class="nav-item ps-4 pe-4 text-white fs-5">

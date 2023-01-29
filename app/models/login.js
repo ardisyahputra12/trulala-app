@@ -1,4 +1,4 @@
-import { sequelize, DataTypes } from "./model.js";
+const { sequelize, DataTypes } = require("./model.js");
 
 const Login = sequelize.define("login", {
     user_name: DataTypes.STRING,
@@ -6,4 +6,4 @@ const Login = sequelize.define("login", {
     user_password: DataTypes.STRING,
 });
 
-export default Login;
+module.exports = Login;

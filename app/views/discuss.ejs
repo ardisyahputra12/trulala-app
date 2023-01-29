@@ -20,7 +20,7 @@
                 <% if (user) { %>
                     <p class="m-0 me-5 fs-5">
                         <i class="bi bi-person-fill p-2"></i>
-                        Halo, <strong>
+                        Halo, <strong class="user_name">
                             <%= user.user_name %>
                         </strong>
                     </p>
@@ -29,8 +29,13 @@
     </header>
     <main class="text-center mt-3">
         <%- !user? "<img src=' ../images/oops-orange.jpg' width='650px' class='mb-5' /> <h3>Harap login terlebih dahulu!</h3>"
-            : '<h1 class="text-decoration-underline">Diskusi</h1>' %>
+            : ` <h1 class="text-decoration-underline">Diskusi</h1>
+            <c-discuss></c-discuss>
+            ` %>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+        integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script type="module" src="../index.js"></script>
 </body>
 

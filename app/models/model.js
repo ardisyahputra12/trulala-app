@@ -1,8 +1,8 @@
-import { Sequelize, DataTypes } from 'sequelize';
+const { Sequelize, DataTypes } = require('sequelize');
 
 const sequelize = new Sequelize("trulala-app", "root", "", {
     host: 'localhost',
     dialect: 'mysql'
 });
 
-export { sequelize, DataTypes };
+module.exports = { sequelize, DataTypes };

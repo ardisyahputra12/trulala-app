@@ -1,4 +1,4 @@
-import Backlog from "../models/backlog.js";
+const Backlog = require("../models/backlog.js");
 
 const all = (req, res, next) => {
     Backlog.findAll().then((results) => {
@@ -83,4 +83,4 @@ const del = (req, res, next) => {
     }))
 };
 
-export default { all, add, edit, move, del };
+module.exports = { all, add, edit, move, del };
